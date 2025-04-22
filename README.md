@@ -23,5 +23,8 @@ Responsive landing page for a **yoga and mindfulness studio**, designed to conve
 Check it out here:  
 [https://joongie11.github.io/zen-space-landing/](https://joongie11.github.io/zen-space-landing/)
 
+## Preview 🌿
+
+![Zen Space Landing Page](assets/images/preview.png)
 
 
