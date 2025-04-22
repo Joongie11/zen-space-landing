@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zen Space</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Zen Space</h1>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="#about">Who We Are</a></li>
+                    <li><a href="#classes">Practice</a></li>
+                    <li><a href="#trainers">Guides</a></li>
+                    <li><a href="#join">Join Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero__content">
+            <h2 class="hero__title">Inhale Stillness. Exhale Stress.</h2>
+            <p class="hero__subtitle">A sanctuary for your mind and body in the heart of the city.</p>
+            <a href="#classes" class="hero__button">Start Your Journey</a>
+        </div>
+    </section>
+
+    <section class="about hidden fade-in-up" id="about">
+
+        <div class="container about__wrapper">
+            <div class="about__image">
+                <img src="assets/images/about.jpg" alt="Yoga" />
+            </div>
+            <div class="about__text">
+                <h2 class="section-title">Who We Are</h2>
+                <p>
+                    At Zen Space, we believe in creating a sanctuary where your mind, body, and breath unite.
+                    Our mission is to guide individuals toward inner calm through holistic practices rooted in tradition
+                    and mindfulness.
+                </p>
+                <p>
+                    Whether you're a complete beginner or a long-time practitioner, our space welcomes you with warmth,
+                    softness, and intention.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="practice hidden fade-in-up" id="classes">
+        <div class="container">
+            <h2 class="section-title center">Our Practice</h2>
+            <div class="practice__grid">
+                <div class="practice__card">
+                    <img src="assets/images/yoga.jpg" alt="Yoga Image" />
+                    <h3>Yoga for Balance</h3>
+                    <p>
+                        Reconnect with your body through intentional movement, breath, and alignment.
+                    </p>
+                </div>
+                <div class="practice__card">
+                    <img src="assets/images/meditation.jpg" alt="Meditation Image" />
+                    <h3>Guided Meditation</h3>
+                    <p>
+                        Discover inner stillness with voice-led meditations and sound journeys.
+                    </p>
+                </div>
+                <div class="practice__card">
+                    <img src="assets/images/breath.jpg" alt="Breathwork Image" />
+                    <h3>Breathwork Flow</h3>
+                    <p>
+                        Learn to regulate stress and energy through powerful breathing techniques.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="guides hidden fade-in-up" id="trainers">
+        <div class="guides__grid stair-layout">
+            <div class="guide__card first">
+                <img src="assets/images/guide1.jpg" alt="Guide Photo" class="guide__photo" />
+                <h3 class="guide__name">Lena Mori</h3>
+                <p class="guide__role">Mindfulness Trainer</p>
+                <p class="guide__quote">"Stillness is a language of the soul."</p>
+            </div>
+
+            <div class="guide__card second">
+                <img src="assets/images/guide2.jpg" alt="Guide Photo" class="guide__photo" />
+                <h3 class="guide__name">Arun Das</h3>
+                <p class="guide__role">Breathwork Coach</p>
+                <p class="guide__quote">"Every breath is a chance to begin again."</p>
+            </div>
+
+            <div class="guide__card third">
+                <img src="assets/images/guide3.jpg" alt="Guide Photo" class="guide__photo" />
+                <h3 class="guide__name">Maya Lee</h3>
+                <p class="guide__role">Yoga Instructor</p>
+                <p class="guide__quote">"Flow with grace, root with strength."</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="join hidden fade-in-up" id="join">
+        <div class="join__content">
+            <h2>Join Our Community</h2>
+            <p>Sign up for our classes and begin your journey toward balance and peace.</p>
+            <form class="join__form">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <select name="practice" required>
+                    <option value="">Select Practice</option>
+                    <option value="yoga">Yoga</option>
+                    <option value="meditation">Meditation</option>
+                    <option value="breathwork">Breathwork</option>
+                </select>
+                <button type="submit">Sign Up</button>
+                <p class="form-message" style="display: none;">Thank you for joining! 🌿</p>
+            </form>
+        </div>
+    </section>
+
+    <div class="modal" id="thankyouModal">
+        <div class="modal__content">
+            <p>Thank you for joining our community! 🌿</p>
+            <button class="close-modal">Close</button>
+        </div>
+    </div>
+
+    <button class="scroll-to-top" aria-label="Scroll to top">
+        <span class="material-icons">arrow_upward</span>
+    </button>
+
+    <footer class="footer">
+        <div class="container footer__content">
+            <p class="footer__text">© 2025 Zen Space • Designed by Sofi</p>
+            <p class="footer__slogan">Finding your balance, one breath at a time.</p>
+            <div class="footer__contacts">
+                <a href="mailto:your.email@example.com" aria-label="Email">
+                    <span class="material-icons">email</span>
+                </a>
+                <a href="tel:+1234567890" aria-label="Phone">
+                    <span class="material-icons">phone</span>
+                </a>
+                <a href="https://instagram.com/yourprofile" target="_blank" aria-label="Instagram">
+                    <img src="assets/icons/instagram.svg" alt="Instagram" />
+                </a>
+                <a href="https://facebook.com/yourprofile" target="_blank" aria-label="Facebook">
+                    <img src="assets/icons/facebook.svg" alt="Facebook" />
+                </a>
+                <a href="https://t.me/yourprofile" target="_blank" aria-label="Telegram">
+                    <img src="assets/icons/telegram.svg" alt="Telegram" />
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
