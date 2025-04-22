@@ -11,6 +11,7 @@ Responsive landing page for a **yoga and mindfulness studio**, designed to conve
 - **Modal Confirmation**: Stylish pop-up on form submission.
 - **Scroll to Top Button**: Easy navigation on long pages.
 - **Footer with Social Links**: Includes Instagram, Facebook, and Telegram icons.
+- **Custom Animations:** Smooth fade-in effects as sections scroll into view.
 
 ## Tech Stack 
 
