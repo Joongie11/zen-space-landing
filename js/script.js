@@ -1,14 +1,15 @@
 const observer = new IntersectionObserver(
-  (entries) => {
+  (entries, observer) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("show");
+        requestAnimationFrame(() => {
+          entry.target.classList.add("show");
+          observer.unobserve(entry.target);
+        });
       }
     });
   },
-  {
-    threshold: 0.2,
-  }
+  { threshold: 0.2 }
 );
 
 const hiddenElements = document.querySelectorAll(".hidden");
